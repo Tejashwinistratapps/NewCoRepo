@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
 public class VideoCampaign {
 	private static String z = "";
 
-
+	
 	WebDriver driver = Instance.getInstance();
 
 	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
@@ -52,7 +52,7 @@ public class VideoCampaign {
 		driver.findElement(By.xpath(properties.getProperty("openvideocampaign"))).click();//open campagin
 		Thread.sleep(3000);
 
-
+		Thread.sleep(3000);
 
 		List<String> campaignNames = new ArrayList<String>();
 		String query = properties.getProperty("query.getCampaignNamesByOrganizationId").replaceAll(":emailId",properties.getProperty("user.name"));
