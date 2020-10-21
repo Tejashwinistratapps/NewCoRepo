@@ -10,7 +10,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 public class ManageTemplates {
 
-	Properties properties = PropertiesFile.readPropertyFile("datafile.properties");
+	Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
 	WebDriver driver = Instance.getInstance();
 	
 	@Test(priority=91,enabled=true)
