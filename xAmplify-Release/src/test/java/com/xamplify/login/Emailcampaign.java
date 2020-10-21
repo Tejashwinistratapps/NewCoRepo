@@ -26,8 +26,8 @@ public class Emailcampaign {
 	//@BeforeMethod   [for auto responses...comment @test annotation ,use @Beforemethod  ]
 	@Test
 	public void ecampaign() throws InterruptedException, SQLException {
-		driver.get("https://release.xamplify.io/home/dashboard/welcome");
-
+		/*driver.get("https://release.xamplify.io/home/dashboard/welcome");
+*/
 		Thread.sleep(5000);
 		Properties properties = PropertiesFile.readPropertyFile("rdata.properties");
 
@@ -35,8 +35,10 @@ public class Emailcampaign {
 
 		// Wait till the element is not visible
 
-		WebElement campele = wait.until(
-				ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("e_campaignhover"))));
+		/*WebElement campele = wait.until(
+				
+			ExpectedConditions.visibilityOfElementLocated(By.xpath(properties.getProperty("e_campaignhover"))));*/
+		WebElement campele =driver.findElement(By.xpath(properties.getProperty("e_campaignhover")));
 		campele.click(); // hover on campaign
 
 		Actions camp_action = new Actions(driver);

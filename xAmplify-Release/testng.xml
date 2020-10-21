@@ -11,12 +11,19 @@
       <class name="com.xamplify.login.Login"/>
     </classes>    
    </test> 
-  
+   
+  <test name="Test_Launch_Email">
+    <classes>
+      <class name="com.xamplify.login.Launch_Email"/>
+    </classes>    
+   </test> 
+   
+  <!-- 
    <test name="Test_ManageTemplates">
     <classes>
       <class name="com.xamplify.login.ManageTemplates"/>
     </classes>    
-   </test> 
+   </test>  -->
   
   
   
